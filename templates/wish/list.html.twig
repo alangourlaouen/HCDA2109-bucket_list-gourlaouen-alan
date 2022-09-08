@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+<div class="container">
+    <div class="wish-list">
+    {% for wish in wishList %}
+    {% if wish.isPublished %}
+    <a href="{{path('app_wish_detail', {id: wish.id})}}">
+        <div class="card">   
+            <span>{{wish.title}}</span>
+        </div>
+    </a>
+
+    {% endif %}
+    {% endfor %}
+</div>
+
+</div>
+
+{% endblock %}

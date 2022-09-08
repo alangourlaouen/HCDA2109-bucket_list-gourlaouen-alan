@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../fonts/Roboto-Regular.ttf")
+}
+
+/* -- html -- */
+
+html {
+    height: 100%;
+}
+
+/* -- Body -- */
+body {
+    font-family: 'Roboto-Regular';
+    background-color: #F3F3F3;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* -- Container -- */
+.container {
+    position: relative;
+    padding: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* -- Navbar -- */
+
+.nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    height: 50px;
+
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+
+}
+
+.nav ul li {
+    list-style: none;
+    margin: 5px;
+    padding: 10px 0;
+}
+
+.nav ul li:hover {
+    background-color: #B6B6B6;
+    border-radius: 5px
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px
+}
+
+/* -- Wish List*/
+
+.wish-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* -- Card --*/
+
+.card {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-header {
+    text-align: center;
+}
+
+.card-info {
+    font-size: 10px;
+    color: grey;
+    float: right;
+    text-align: end;
+}
+
+
+/* -- Footer -- */
+
+footer {
+    text-align: center;
+}

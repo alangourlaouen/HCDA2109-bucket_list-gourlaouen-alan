@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Bucket List{% endblock %}</title>
+        <link rel="stylesheet" href="{{asset('css/styles.css')}}">
+        <link rel="icon" type="image/png" href="{{asset('favicon.png')}}">
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        {% block stylesheets %}
+            
+        {% endblock %}
+
+  
+    </head>
+    <body>
+
+        <div>
+            {% include "nav/nav.html.twig" %}
+            {% block body %}{% endblock %}
+        </div>
+        
+     
+
+        <script
+            src="https://code.jquery.com/jquery-3.6.1.slim.js"
+            integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk="
+            crossorigin="anonymous">
+        </script>
+        {% block javascript %} 
+        
+        {% endblock %}
+
+        <footer>
+             <span>©Bucket-List | {{'now'|date('Y')}}</span> 
+            {% block footer %}{% endblock %}
+        </footer>
+    </body>
+
+   
+</html>
