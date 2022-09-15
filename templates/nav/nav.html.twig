@@ -1,7 +1,22 @@
 <nav class="nav">
+
   <ul>
-  <li><a href="{{path('app_home')}}">Accueil</a></li>
+    <li><a href="{{path('app_home')}}">Accueil</a></li>
     <li><a href="{{path('app_wish')}}">Liste</a></li>
     <li><a href="{{path('app_legal_stuff')}}">À propos</a></li>
+    {% if app.user %}
+    <li><a href="{{path('app_wish_create')}}">Ajouter une idée</a></li>
+    {% endif %}
   </ul>
+
+
+{% if app.user %}
+  <a href="{{path('app_logout')}}">Déconnexion</a>
+  {% endif %}
+
+  {% if not app.user %}
+  <a href="{{path('app_login')}}">Se connecter</a>
+  {% endif %}
+  
+
 </nav>

@@ -40,6 +40,7 @@ body {
     width: 100%;
     background-color: white;
     height: 50px;
+    justify-content: space-between;
 
 }
 
@@ -94,10 +95,30 @@ body {
 .card-info {
     font-size: 10px;
     color: grey;
-    float: right;
     text-align: end;
+    width: 100%;
 }
 
+.card-info-center {
+    text-align: center !important;
+}
+
+
+/* -- Alert Message -- */
+
+.alert,
+.alert-success {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin: 10px auto;
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(0, 231, 0);
+    border-radius: 7px;
+    color: white;
+    transform: translate(-50%, 0);
+}
 
 /* -- Footer -- */
 

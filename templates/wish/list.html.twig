@@ -8,7 +8,16 @@
     {% if wish.isPublished %}
     <a href="{{path('app_wish_detail', {id: wish.id})}}">
         <div class="card">   
-            <span>{{wish.title}}</span>
+
+        <div class="card-header">
+         <h3>{{wish.title}}</h3>
+        </div>
+
+        <div class="card-body">
+        <div class="card-info card-info-center">
+                <span>{{wish.category.name}}</span>
+            </div>
+        </div>
         </div>
     </a>
 

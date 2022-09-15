@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+<div class="form">
+
+{{form_start(form)}}
+
+    <div class="form-group">
+
+        <div class="form-label">
+            {{ form_label(form.title)}}
+        </div>
+
+        <div class="form-input">
+            {{form_widget(form.title)}}
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="form-label">
+            {{ form_label(form.author)}}
+        </div>
+
+        <div class="form-input">
+            {{form_widget(form.author)}}
+        </div>
+
+    
+    </div>
+
+    <div class="form-group">
+        <div class="form-label">
+            {{ form_label(form.category)}}
+        </div>
+
+        <div class="form-input">
+            {{form_widget(form.category)}}
+        </div>
+
+    
+    </div>
+    
+    <div class="form-group">
+        <div class="form-label">
+            {{ form_label(form.description)}}
+        </div>
+
+        <div class="form-input">
+            {{form_widget(form.description)}}
+        </div>
+    </div>
+
+    <input type="submit" class="type" value="Enregistrer">
+
+
+{{form_end(form)}} 
+
+</div>
+
+
+
+{% endblock %}
